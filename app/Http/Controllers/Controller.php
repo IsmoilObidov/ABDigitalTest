@@ -44,7 +44,7 @@ class Controller extends BaseController
 
         return $this->login($request);
     }
-    function login($request)
+    function login(Request $request)
     {
         if (!Auth::attempt($request->only('email', 'password'))) {
             throw ValidationException::withMessages([

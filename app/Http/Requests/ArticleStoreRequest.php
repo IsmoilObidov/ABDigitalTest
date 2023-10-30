@@ -23,8 +23,7 @@ class ArticleStoreRequest extends FormRequest
     {
         return [
             'title' => 'required|max:255',
-            'text' => 'required',
-            'preview_image' => 'image',
+            'text' => 'required'
         ];
     }
 }
